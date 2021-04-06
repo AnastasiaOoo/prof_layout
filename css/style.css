@@ -304,10 +304,10 @@ span{
 .inputform{
     padding: 15px 50px;
     border-radius: 20px 0 0 20px;
-    background-color: #E1E1E1;
+    
     font-size: 14px;
     line-height: 17px;
-    opacity: 0.67;
+    background-color: rgba(0,0,0,0);
     border-color: rgba(0,0,0,0);
     margin: 0;
 }
@@ -322,4 +322,9 @@ span{
     margin: 0;
     color: white;
 
+}
+.formail{
+    background-color: rgba(200,200,200,0.67);
+    
+    border-radius: 20px;
 }
