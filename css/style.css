@@ -37,6 +37,48 @@ a {
     margin-right: 33px;
 }
 /*мой браузер не поддерживает gap*/
+.menu{
+    position: relative;
+}
+.cont_menu{
+    position: absolute;
+    right: 0;
+    top: 70px;
+    background-color: white;
+    padding: 45px 100px 148px 30px;
+    display: flex;
+    
+}
+.ol_menu{
+    list-style: none;
+}
+.big{
+    font-size: 14px;
+    line-height: 17px;
+    color: #F16D7F;
+    
+}
+.li_margin_big{
+    margin: 20px 0 12px 0;
+}
+.cross{
+    position: absolute;
+    right: 24px;
+    top: 100px;
+    z-index: 1;
+}
+.cross:active .cont_menu{
+    display: none;
+}
+.margin_li{
+    margin: 11px 0;
+}
+.small{
+    font-size: 14px;
+    line-height: 17px;
+    color: #6F6E6E;
+    
+}
 
 .header__search {
     margin-left: 41px;
@@ -68,6 +110,9 @@ a {
 }
 
 .promo__text {
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 38px;
     color: #F16D7F;
 }
 
@@ -159,11 +204,45 @@ a {
     max-width: 360px;
     margin-bottom: 30px;
     background-color: #F8F8F8;
+    position: relative;
+}
+.catalog_card:hover .catalog_card_img{
+    filter: brightness(50%);
+}
+.catalog_card:hover .addsvg{
+    display: flex;
+}
+.paragadd{
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+    margin-left: 11px;
+}
+.addsvg{
+    position: absolute;
+   z-index: 1;
+   top: 188px;
+   left: 111px;
+   display: none;
+   flex-direction: row;
+   border: 2px solid white;
+   align-items: center;  
+   padding: 12px 15px;
+}
+.addsvg:hover{
+    background-color: white;
+}
+.addsvg:hover .paragadd{
+    color: #D73C3C;
+}
+.addsvg:hover .addtocard path{
+    fill: #D73C3C;
 }
 .heading_catalog{
     margin: 25px 0 12px 18px;
     font-size: 13px;
     line-height: 16px;
+    color: #000000;
 }
 .catalog_parag{
     margin: 0 28px 18px 18px;
@@ -192,6 +271,11 @@ a {
     padding: 15px 40px;
     border: 1px solid #FF6A6A;
     margin: auto;
+}
+.button:hover .button_catalog{
+    border: #F16D7F solid 1px;
+    background-color: #F16D7F;
+    color: white;
 }
 .delivery{
     background: #222224;
@@ -239,9 +323,24 @@ a {
 .footer_pic{
     display: flex;
     align-items: center;
+    
 }
+.footer_icons{
+    position: relative;
+}
+.firstimg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+   
+}
+
 .footer_icons:not(:last-child){
     margin-right: 8px;
+}
+.footer_icons:hover .firstimg{
+    display: block;
 }
 .subscribe{
     background-image: url(../img/qwe.jpg);
@@ -304,10 +403,10 @@ span{
 .inputform{
     padding: 15px 50px;
     border-radius: 20px 0 0 20px;
-    background-color: #E1E1E1;
+    
     font-size: 14px;
     line-height: 17px;
-    opacity: 0.67;
+    background-color: rgba(0,0,0,0);
     border-color: rgba(0,0,0,0);
     margin: 0;
 }
@@ -322,4 +421,12 @@ span{
     margin: 0;
     color: white;
 
+}
+.submit_button:hover{
+    background: #E05C6E;
+}
+.formail{
+    background-color: rgba(200,200,200,0.67);
+    
+    border-radius: 20px;
 }
