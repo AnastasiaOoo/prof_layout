@@ -47,7 +47,7 @@ a {
     background-color: white;
     padding: 45px 100px 148px 30px;
     display: flex;
-    
+    z-index: 1;
 }
 .ol_menu{
     list-style: none;
@@ -65,7 +65,7 @@ a {
     position: absolute;
     right: 24px;
     top: 100px;
-    z-index: 1;
+    z-index: 2;
 }
 .cross:active .cont_menu{
     display: none;
@@ -217,6 +217,8 @@ a {
     font-size: 14px;
     line-height: 17px;
     color: #FFFFFF;
+    
+    margin: auto;
     margin-left: 11px;
 }
 .addsvg{
@@ -430,4 +432,171 @@ span{
     background-color: rgba(200,200,200,0.67);
     
     border-radius: 20px;
+}
+.pink_block{
+    background-color: #F8F3F4;
+    padding: 60px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.pink_text{
+    font-size: 24px;
+    line-height: 29px;
+    color: #F16D7F;
+}
+.grey_text{
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #636363;
+}
+.pink_menu_text{
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    color: #F16D7F;
+}
+.catalog_filter{
+    padding: 50px 0 64px 0;
+}
+.carousel-control-prev-icon{
+    background-color: rgb(180, 180, 180);
+    
+}
+.carousel-control-next-icon{
+    background-color: rgb(180, 180, 180);
+    
+}
+.carousel-control-color{
+    color: black;
+} 
+.center_content_text{
+    border: solid 1px #EAEAEA;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    width: 1140px;
+    align-self: center;
+    
+    margin-bottom: 128px;
+    
+} 
+.women_collection{
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #F16D7F;
+    margin-top: 64px;
+    text-align: center;
+    
+}  
+.hr_first{
+    width: 64px;
+    height: 3px;
+    color: #EF5B70;
+    align-self: center;
+    margin-top: 12px;
+}
+.moschino{
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 22px;
+    color: #4D4D4D;
+    margin-top: 12px;
+    text-align: center;
+}
+.card_text{
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #5E5E5E;
+    margin-top: 48px;
+    width: 555px;
+    align-self: center;
+}
+.center_price_color{
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    color: #EF5B70;
+    text-align: center;
+    margin-top: 32px;
+}
+.hr_two{
+    width: 642px;
+    margin-top: 64px;
+    align-self: center;
+}
+.center_card_content{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.opshacom{
+    display: flex;
+    flex-direction: row;
+}
+.addsvg_product{
+    display: flex;
+    flex-direction: row;
+    border: 2px solid #F26376;
+    align-items: center;  
+    padding: 12px 15px;
+    width: 200px;
+    align-self: center;
+    justify-content: space-around;
+    margin: 48px 0 64px 0;
+}
+.addtocard_product path{
+    fill: #F26376;
+}
+.paragadd_product{
+    font-size: 14px;
+    line-height: 17px;
+    color: #F26376;
+    margin: auto;
+    margin-left: 22px;
+    
+}
+.addsvg_product:hover{
+    background-color: #F26376;
+}
+.addsvg_product:hover .addtocard_product path{
+    fill: white;
+}
+.addsvg_product:hover .paragadd_product{
+    color: white;
+}
+.mar_bot_cat{
+    margin-bottom: 100px;
+}
+.page_number{
+    display: flex;
+    flex-direction: row;
+    
+    justify-content: center;
+    border: 1px solid #EBEBEB;
+    padding: 12px 40px;
+    width: 284px;
+    margin: auto;
+}
+.other_pages:not(:last-child){
+    margin-right: 20px;
+}
+.other_pages{
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: #C4C4C4;
+
+}
+.first_page{
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: #EF5B70;
+    margin-right: 20px;
 }
