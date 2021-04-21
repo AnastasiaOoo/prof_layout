@@ -294,11 +294,11 @@ a {
 }
 
 .addsvg:hover .paragadd {
-  color: #D73C3C;
+  color: #ff7e90;
 }
 
 .addsvg:hover .addtocard path {
-  fill: #D73C3C;
+  fill: #ff7e90;
 }
 
 .heading_catalog {
@@ -442,7 +442,7 @@ a {
   margin-right: 8px;
 }
 
-.footer_icons:hover .firstimg {
+.footer_icons:hover .footer_icons:not(:last-child) {
   display: block;
 }
 
@@ -512,7 +512,7 @@ span {
   font-style: italic;
 }
 
-.sub_text_bottom {
+span_bottom {
   font-weight: bold;
   font-size: 24px;
   line-height: 167.2%;
@@ -575,6 +575,23 @@ span {
           align-items: center;
 }
 
+.vse {
+  width: 1140px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 .pink_text {
   font-size: 24px;
   line-height: 29px;
@@ -599,7 +616,7 @@ span {
 }
 
 .bread {
-  width: 210px;
+  width: 250px;
 }
 
 .catalog_filter {
@@ -750,6 +767,11 @@ span {
   width: 80px;
 }
 
+.carousel-picture {
+  max-width: 1600px;
+  margin: auto;
+}
+
 .carousel-control-prev-icon {
   background-color: #b4b4b4;
 }
@@ -771,8 +793,9 @@ span {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-flex-line-pack: center;
-      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 1140px;
   -ms-flex-item-align: center;
       align-self: center;
@@ -786,6 +809,9 @@ span {
   color: #F16D7F;
   margin-top: 64px;
   text-align: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 .hr_first {
@@ -805,6 +831,9 @@ span {
   color: #4D4D4D;
   margin-top: 12px;
   text-align: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 .card_text {
@@ -827,6 +856,9 @@ span {
   color: #EF5B70;
   text-align: center;
   margin-top: 32px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 .hr_two {
@@ -904,7 +936,7 @@ span {
   fill: white;
 }
 
-.addsvg_product:hover .paragadd_product {
+.addsvg_product:hover .addsvg_product:hover .addtocard_product path {
   color: white;
 }
 
