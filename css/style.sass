@@ -193,7 +193,7 @@ a
 .catalog
     display: flex
     flex-flow: wrap row
-    justify-content: space-between
+    justify-content: space-around
 
 
     &_card
@@ -948,3 +948,161 @@ span
     font-size: 16px
     line-height: 19px
     color: #FFFFFF
+@media (max-width: 768px)
+    .header
+        padding: 18px 32px
+        box-sizing: border-box
+    .promo
+        &__h1
+            font-weight: 900
+            font-size: 44px
+            line-height: 53px
+        &__heading
+            font-weight: bold
+            font-size: 24px
+            line-height: 29px
+        &__text
+            font-weight: bold
+            font-size: 24px
+            line-height: 29px
+    .sale
+        padding: 20px 16px 155px 16px
+    .delivery
+        flex-direction: column
+        margin-top: 64px
+        align-items: center
+        padding-top: 48px
+        padding-bottom: 64px
+        &_card
+            max-width: 360px
+            &:not(:last-child)
+                margin: auto
+                margin-bottom: 48px
+    .subscribe
+        flex-direction: column
+        align-items: center
+        padding-top: 64px
+        padding-bottom: 140px 
+        background-size: cover
+        background-position: 25%       
+    .otherwomenpic
+        margin-bottom: 64px
+    .inputform 
+        padding: 16px 22px
+    .formail
+        display: flex
+        flex-direction: row
+        background-color: #E1E1E1
+    .submit_button
+        padding: 16px 22px
+    .footer
+        padding: 24px 32px
+@media (max-width: 1140px)
+    .footer
+        padding: 24px 32px
+    .header
+        padding: 18px 32px
+        box-sizing: border-box
+    .sale
+        padding: 20px 16px 155px 16px
+    .delivery
+        padding-left: 32px
+        padding-right: 32px
+    .inputform 
+        padding: 16px 22px
+    .formail
+        display: flex
+        flex-direction: row
+        background-color: #E1E1E1
+    .submit_button
+        padding: 16px 22px
+@media (max-width: 425px)
+    .header__icons
+        &_none
+            display: none
+        &:not(:last-child)
+            margin-right: 0
+    .header
+        padding: 18px 16px
+        box-sizing: border-box
+    .promo
+        display: flex
+        justify-content: center
+        align-items: center
+        padding: 148px 0
+        &__left
+            display: none
+        &__right
+            width: 70%
+        &__h1
+            font-weight: 900
+            font-size: 38px
+            line-height: 46px
+        &__heading
+            font-size: 20px
+            line-height: 24px
+        &__text
+            font-size: 20px
+            line-height: 24px 
+        &__content
+            margin: auto
+    .sale
+        padding-bottom: 64px
+        &__box
+            flex-direction: column
+        &__item
+            &:not(:last-child)
+                margin-right: 0
+                margin-bottom: 32px
+            &_big
+                min-height: 110px
+        &__img__big
+            
+            min-height: 110px
+    .otherwomenpic
+        width: 90%
+    .bottom_parag
+        font-size: 14px
+        line-height: 153.2%
+    .footer
+        flex-direction: column-reverse
+        padding: 0
+        &_parag
+            margin-bottom: 9px
+        &_pic
+            margin: 42px 0
+@media (max-width: 610px)
+    .promo
+        display: flex
+        justify-content: center
+        align-items: center
+        padding: 148px 0
+        &__left
+            display: none
+        &__right
+            width: 70%
+        &__h1
+            font-weight: 900
+            font-size: 38px
+            line-height: 46px
+        &__heading
+            font-size: 20px
+            line-height: 24px
+        &__text
+            font-size: 20px
+            line-height: 24px 
+        &__content
+            margin: auto
+    .sale
+        padding-bottom: 64px
+        &__box
+            flex-direction: column
+        &__item
+            &:not(:last-child)
+                margin-right: 0
+                margin-bottom: 32px
+            &_big
+                min-height: 110px
+        &__img__big
+            
+            min-height: 110px
