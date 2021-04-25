@@ -27,11 +27,9 @@ a
     justify-content: space-between
     align-items: center
 
-
     &__right
         display: flex
         align-items: center
-
 
     &__icons:not(:last-child)
         margin-right: 33px
@@ -66,7 +64,6 @@ a
     top: 100px
     z-index: 2
 
-
     &:active .cont_menu
         display: none
 
@@ -88,24 +85,19 @@ a
     padding-left: calc(50% - 800px)
     padding-right: calc(50% - 800px)
 
-
     &__left
         width: 50%
-
 
     &__right
         width: 50%
 
-
     &__img
         width: 100%
-
 
     &__content
         margin-top: 30%
         border-left: 12px solid $colorselect
         padding-left: 16px
-
 
     &__text
         font-weight: bold
@@ -113,13 +105,11 @@ a
         line-height: 38px
         color: $colorselect
 
-
     &__h1
         font-weight: 900
         font-size: 48px
         line-height: 58px
         color: $colordark
-
 
     &__heading
         font-weight: bold
@@ -131,16 +121,13 @@ a
     padding-top: 64px
     padding-bottom: 96px
 
-
     &__box
         display: flex
         margin-bottom: 30px
 
-
     &__item
         display: flex
         position: relative
-
 
     &__content
         position: absolute
@@ -153,13 +140,11 @@ a
         justify-content: center
         align-items: center
 
-
     &__text
         font-size: 16px
         line-height: 19px
         text-align: center
         color: #FFFFFF
-
 
     &__heading
         font-weight: bold
@@ -168,10 +153,8 @@ a
         text-align: center
         color: $colorselect
 
-
     &__img
         width: 100%
-
 
     &__item:not(:last-child)
         margin-right: 30px
@@ -195,7 +178,6 @@ a
     flex-flow: wrap row
     justify-content: space-around
 
-
     &_card
 
         max-width: 360px
@@ -203,10 +185,8 @@ a
         background-color: #F8F8F8
         position: relative
 
-
     &_card:hover .catalog_card_img
         filter: brightness(50%)
-
 
     &_card:hover .addsvg
         display: flex
@@ -230,14 +210,11 @@ a
     align-items: center
     padding: 12px 15px
 
-
     &:hover
         background-color: white
 
-
     &:hover .paragadd
         color: $colorselect + #111
-
 
     &:hover .addtocard path
         fill: $colorselect + #111
@@ -265,7 +242,6 @@ a
     display: flex
     justify-content: center
 
-
     &_catalog
         text-align: center
         font-size: 16px
@@ -274,7 +250,6 @@ a
         padding: 15px 40px
         border: 1px solid #FF6A6A
         margin: auto
-
 
     &:hover .button_catalog
         border: $colorselect solid 1px
@@ -290,13 +265,11 @@ a
     margin-top: 95px
     justify-content: space-between
 
-
     &_heading
         margin: 28px 0 16px 0
         font-size: 19.96px
         line-height: 24px
         color: #FBFBFB
-
 
     &_parag
         font-weight: 300
@@ -305,12 +278,10 @@ a
         text-align: center
         color: #FBFBFB
 
-
     &_card
         display: flex
         flex-direction: column
         align-items: center
-
 
     &_card:not(:last-child)
         margin-right: 30px
@@ -323,17 +294,14 @@ a
     padding-top: 15px
     padding-bottom: 15px
 
-
     &_parag
         font-size: 16px
         line-height: 19px
         color: #FBFBFB
 
-
     &_pic
         display: flex
         align-items: center
-
 
     &_icons
         position: relative
@@ -346,7 +314,6 @@ a
 
 .footer_icons:not(:last-child)
     margin-right: 8px
-
 
     .footer_icons:hover &
         display: block
@@ -394,7 +361,6 @@ span
     text-align: center
     font-style: italic
 
-
     &_bottom
         font-weight: bold
         font-size: 24px
@@ -429,7 +395,6 @@ span
     margin: 0
     color: white
 
-
     &:hover
         background: #E05C6E
 
@@ -457,16 +422,13 @@ span
     font-size: 24px
     line-height: 29px
     color: $colorselect
-    
+
 .grey_text
     font-weight: 300
     font-size: 14px
     line-height: 17px
     color: #636363
 
-    
-    
-    
 .breadcrumb-item
 
     color: $colorselect!important
@@ -692,7 +654,6 @@ span
 .addsvg_product:hover .addtocard_product path
     fill: white
 
-
     .addsvg_product:hover &
         color: white
 
@@ -715,7 +676,6 @@ span
     line-height: 19px
     color: #C4C4C4
     margin: auto
-
 
     &:not(:last-child)
         margin-right: 20px
@@ -750,7 +710,6 @@ span
     font-size: 24px
     line-height: 29px
     color: #000000
-
 
     &:not(:last-child)
         margin-bottom: 16px
@@ -948,6 +907,8 @@ span
     font-size: 16px
     line-height: 19px
     color: #FFFFFF
+.big_menu
+    display: none
 @media (max-width: 768px)
     .header
         padding: 18px 32px
@@ -982,12 +943,12 @@ span
         flex-direction: column
         align-items: center
         padding-top: 64px
-        padding-bottom: 140px 
+        padding-bottom: 140px
         background-size: cover
-        background-position: 25%       
+        background-position: 25%
     .otherwomenpic
         margin-bottom: 64px
-    .inputform 
+    .inputform
         padding: 16px 22px
     .formail
         display: flex
@@ -997,7 +958,20 @@ span
         padding: 16px 22px
     .footer
         padding: 24px 32px
-@media (max-width: 1140px)
+    .pink_block
+        padding-left: 16px
+    .catalog_filter
+        padding-top: 24px
+        padding-bottom: 40px
+        padding-left: 16px
+        justify-content: space-between
+        &_some
+            width: auto
+            order: none
+    
+    .catalog_card_last_child
+        display: none
+@media (max-width: 1080px)
     .footer
         padding: 24px 32px
     .header
@@ -1008,7 +982,7 @@ span
     .delivery
         padding-left: 32px
         padding-right: 32px
-    .inputform 
+    .inputform
         padding: 16px 22px
     .formail
         display: flex
@@ -1016,15 +990,25 @@ span
         background-color: #E1E1E1
     .submit_button
         padding: 16px 22px
+    .pink_block
+        padding-left: 16px
+    .catalog_filter
+        padding-top: 24px
+        padding-bottom: 40px
+        padding-left: 16px
+        justify-content: space-between
+    .catalog_card_last_child
+        display: none
 @media (max-width: 425px)
-    .header__icons
-        &_none
-            display: none
-        &:not(:last-child)
-            margin-right: 0
+    
     .header
         padding: 18px 16px
         box-sizing: border-box
+        &__icons
+            &_none
+                display: none
+            &:not(:last-child)
+                margin-right: 0
     .promo
         display: flex
         justify-content: center
@@ -1043,7 +1027,7 @@ span
             line-height: 24px
         &__text
             font-size: 20px
-            line-height: 24px 
+            line-height: 24px
         &__content
             margin: auto
     .sale
@@ -1057,7 +1041,7 @@ span
             &_big
                 min-height: 110px
         &__img__big
-            
+
             min-height: 110px
     .otherwomenpic
         width: 90%
@@ -1071,6 +1055,30 @@ span
             margin-bottom: 9px
         &_pic
             margin: 42px 0
+    .vse
+        display: flex
+        flex-direction: column
+        align-items: center
+    .pink
+        &_block
+            padding: 24px 0 46px 0
+        &_text
+            margin-bottom: 32px   
+    .bread
+        width: auto     
+    .filter
+        display: none
+        &_img
+            display: none
+    .big_menu
+        display: block
+    .catalog_filter_parag
+        font-size: 12px
+        line-height: 14px
+    .catalog_card_last_child
+        display: block
+    
+            
 @media (max-width: 610px)
     .promo
         display: flex
@@ -1090,7 +1098,7 @@ span
             line-height: 24px
         &__text
             font-size: 20px
-            line-height: 24px 
+            line-height: 24px
         &__content
             margin: auto
     .sale
@@ -1104,5 +1112,19 @@ span
             &_big
                 min-height: 110px
         &__img__big
-            
+
             min-height: 110px
+    .catalog_card_last_child
+        display: block
+    .vse
+        display: flex
+        flex-direction: column
+        align-items: center
+    .pink
+        &_block
+            padding: 24px 0 46px 0
+        &_text
+            margin-bottom: 32px   
+    .bread
+        width: auto     
+    
