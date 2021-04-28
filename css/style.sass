@@ -304,7 +304,12 @@ a
         align-items: center
 
     &_icons
-        position: relative
+        width: 32px
+        height: 32px
+        display: flex
+        justify-content: center
+        align-items: center
+        background-color: #ffffff
 
 .firstimg
     position: absolute
@@ -315,8 +320,11 @@ a
 .footer_icons:not(:last-child)
     margin-right: 8px
 
-    .footer_icons:hover &
-        display: block
+.footer_icons:hover 
+    background-color: $colorselect
+.footer_icons:hover .footer_pic path
+    fill: white
+
 
 .subscribe
     background-image: url(../img/qwe.jpg)
